@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: smikheiev/action-is-pr-title-mergeable@master
+      - uses: smikheiev/action-is-pr-title-mergeable@basic_implementation
