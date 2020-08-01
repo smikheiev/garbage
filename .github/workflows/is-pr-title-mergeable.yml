@@ -1,9 +1,8 @@
-# This workflow tests how the action works.
-name: Test action is-pr-title-mergeable
+name: Is PR title mergeable
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened, edited]
+    types: [opened, reopened, edited]
 
 jobs:
   check_if_pr_title_is_mergeable:
@@ -11,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: smikheiev/action-is-pr-title-mergeable@basic_implementation
+      - uses: smikheiev/action-is-pr-title-mergeable@master
