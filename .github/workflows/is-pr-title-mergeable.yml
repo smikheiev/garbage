@@ -10,20 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: smikheiev/action-is-pr-title-mergeable@choose_keywords_to_support
-        with: 
-          # config for WIP keyword
-          wip: >
-            {
-              "shouldCheck": false
-            }
-          # config for PENDING keyword
-          pending: >
-            {
-              "shouldCheck": false
-            }
-          # config for RFC keyword
-          rfc: >
+      - uses: smikheiev/action-is-pr-title-mergeable@master
+        with:
+          wip: > # config for WIP keyword
             {
               "shouldCheck": true
+            }
+          pending: > # config for PENDING keyword
+            {
+              "shouldCheck": true
+            }
+          rfc: > # config for RFC keyword
+            {
+              "shouldCheck": false
             }
