@@ -12,15 +12,18 @@ jobs:
       - uses: actions/checkout@v1
       - uses: smikheiev/action-is-pr-title-mergeable@choose_keywords_to_support
         with: 
-          wip: > # config for WIP keyword
+          # config for WIP keyword
+          wip: >
             {
               "shouldCheck": false
             }
-          pending: > # config for PENDING keyword
+          # config for PENDING keyword
+          pending: >
             {
               "shouldCheck": false
             }
-          rfc: > # config for RFC keyword
+          # config for RFC keyword
+          rfc: >
             {
               "shouldCheck": true
             }
