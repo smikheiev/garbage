@@ -14,13 +14,16 @@ jobs:
         with:
           wip: > # config for WIP keyword
             {
-              "shouldCheck": true
+              "shouldCheck": true,
+              "shouldAddLabel": true 
             }
           pending: > # config for PENDING keyword
             {
-              "shouldCheck": true
+              "shouldCheck": true,
+              "shouldAddLabel": true 
             }
           rfc: > # config for RFC keyword
             {
-              "shouldCheck": false
+              "shouldCheck": false,
+              "shouldAddLabel": true 
             }
