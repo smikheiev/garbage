@@ -27,3 +27,4 @@ jobs:
               "shouldCheck": false,
               "shouldAddLabel": true 
             }
+          token: ${{ secrets.GITHUB_TOKEN }}
