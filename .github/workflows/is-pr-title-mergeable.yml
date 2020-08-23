@@ -15,7 +15,8 @@ jobs:
           wip: > # config for WIP keyword
             {
               "shouldCheck": true,
-              "shouldAddLabel": true 
+              "shouldAddLabel": true,
+              "labelColor": "0000ff" 
             }
           pending: > # config for PENDING keyword
             {
