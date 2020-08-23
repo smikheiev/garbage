@@ -24,7 +24,7 @@ jobs:
             }
           rfc: > # config for RFC keyword
             {
-              "shouldCheck": false,
+              "shouldCheck": true,
               "shouldAddLabel": true 
             }
           token: ${{ secrets.GITHUB_TOKEN }}
